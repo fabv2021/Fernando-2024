@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directorio DiGi</title>
+
+    <!-- CSS DE BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- JS DE BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./Assets/css/styles.css">
+
+    <script src="./Assets/js/script.js"></script>
+
+ </head>
+
+<body>
+
+    <!-- Barra de NAvegación -->
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"> <img src="./Assets/img/foto digimon V3.jpg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">DigiMenu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#MisDigimones">Listado Digimones</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a> -->
+                  <!-- <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul> -->
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- FIN BARRA NAVEGACION -->
+    
+    
+    <div class="bg-primary py-5 mt-5">
+
+        <h1 class="text-center py-5">Directorio DIGIMON</h1>
+
+        <div class="text-center">
+            <img id="carruselImg" src="./Assets/img/foto digimon V3.jpg" alt="">
+
+        </div>
+
+        <div class="text-center py-">
+
+            <button class="estiloBoton">Nombre<h6 id="nombreDigimon"></h6></button>
+
+            <button class="estiloBoton">Nivel<h6 id="nivelDigimon"></h6></button>
+
+        </div>
+
+        <div class="text-center py-1">
+            <button class="estiloBoton" id="btnCambiarImagen">Cambiar Digimon</button>
+
+            <button class="estiloBoton" id="btnRegistrar">Registrar Digimon</button>
+        </div>
+
+
+    </div>
+
+    <section id="MisDigimones" class="py-4 container">
+        <h2 class="text-center py-3">Listado de tus DIGIMONES registrados:</h2>
+
+        <table class="table mt-5">
+            <thead>
+                <tr class="text-center">
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Nivel</th>
+                    <th scope="col">Imagen</th>
+                </tr>
+            </thead>
+
+            <tbody id="listadoDigimones">
+
+            </tbody>
+        </table>
+
+
+    </section>
+
+
+</body>
+
+</html>
